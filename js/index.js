@@ -3,33 +3,41 @@ fetch("https://www.fishwatch.gov/api/species")
 .then(data => {
   data.forEach((species, index) => {
     const card = document.getElementById(`card-${index + 1}`);
-    card.querySelector(".species-image").src = species.image;
-    card.querySelector(".species-name").innerHTML = species.common_name;
-    card.querySelector(".population").innerHTML = species.population;
-    card.querySelector(".taste").innerHTML = species.taste;
+    const speciesName = species["Species Name"]
+    const speciesImage = species["Species Illustration Photo"].src
+    card.querySelector(".species-image").src = speciesImage;
+    card.querySelector(".species-name").innerHTML = speciesName;
+    card.querySelector(".population").innerHTML = `Population: ${species.Population}`;
+    card.querySelector(".biology").innerHTML = `Biology: ${species.Biology}`;
+
   });
 });
+
+
+
 
 // fetch('https://www.fishwatch.gov/api/species')
 //   .then(response => response.json())
 //   .then(data => {
 //     console.log(data)
 //     // Extract the population, species name, and taste from the data
-//     const { population, species_name, taste } = data;
+//     const { Population, species, taste } = data;
 //     // Create the card element
 //     const card = document.createElement('div');
 //     card.classList.add('card');
 //     // Add the image element
 //     const image = document.createElement('img');
-//     image.src = data.image_url; // Set the image URL
+//     const speciesImage = species['Species Illustration Photo'].src
+//     image.src = speciesImage; // Set the image URL
 //     card.appendChild(image);
 //     // Add the population element
 //     const populationElement = document.createElement('div');
-//     populationElement.innerHTML = `Population: ${population}`;
+//     populationElement.innerHTML = `Population: ${Population}`;
 //     card.appendChild(populationElement);
 //     // Add the species name element
 //     const speciesNameElement = document.createElement('div');
-//     speciesNameElement.innerHTML = `Species name: ${species_name}`;
+//     const speciesName = species['Species Name']
+//     speciesNameElement.innerHTML = `Species name: ${speciesName}`;
 //     card.appendChild(speciesNameElement);
 //     // Add the taste element
 //     const tasteElement = document.createElement('div');
@@ -55,26 +63,26 @@ fetch("https://www.fishwatch.gov/api/species")
 
 // document.addEventListener('DOMContentLoaded', () => {
 
-    // document.getElementsByClassName('nav-item')[0].remove()
+//     document.getElementsByClassName('nav-item')[0].remove()
 
     
-    // // const fetchData1 = () => {
-    // fetch("https://www.fishwatch.gov/api/species").then(res => res.json())
-    // .then(data =>   console.log(data))
-        // const drupal =  document.getElementById('poster')
-        // console.log(drupal)
-        // drupal.src = firstFish.poster
-        // const firstFishName = document.querySelector('#');
-        // console.log(drupal)
-        // console.log(drupal)
-        // firstFishName.textContent = firstFish.title;
-        // const fistFishBiology = document.querySelector('#biology');
-        // fistFishBiology.textContent = `${firstFish.runtime} minutes`;
+//     // const fetchData1 = () => {
+//     fetch("https://www.fishwatch.gov/api/species").then(res => res.json())
+//     .then(data =>   console.log(data))
+//         const drupal =  document.getElementById('poster')
+//         console.log(drupal)
+//         drupal.src = firstFish.poster
+//         const firstFishName = document.querySelector('#');
+//         console.log(drupal)
+//         console.log(drupal)
+//         firstFishName.textContent = firstFish.title;
+//         const fistFishBiology = document.querySelector('#biology');
+//         fistFishBiology.textContent = `${firstFish.runtime} minutes`;
 
     
 
-    // }
-    // fetchData1()
+//     }
+//     fetchData1()
 //     const navBar = document.getElementById('movies-list')
 
 //     //Create fetch 

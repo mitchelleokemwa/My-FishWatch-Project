@@ -1,5 +1,9 @@
 #jumbo {
-    background-image: url("../css/image/fish.jpg");
+    background-image: url("../css/image/fish.jpg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* body {
+    background-color: aquamarine;
+} */
