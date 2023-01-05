@@ -24,9 +24,7 @@ Live link of the web page
 
    # Author
    
-   The project was contributed by: 
-   
-   . Mitchelle Okemwa
+   The project was contributed by: Mitchelle Okemwa
 
    # Licence
 
