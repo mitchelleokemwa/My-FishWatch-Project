@@ -6,9 +6,11 @@ It's a site that contains details of different types of fish.Their population,bi
 
 # Installation
 
-Clone the project
-cd to the right directory 
-Install dependencies
+.Clone the project
+
+.cd to the right directory 
+
+.Install dependencies
    npm install
 
    Start the json server
