@@ -15,15 +15,18 @@ Install dependencies
 
    # Running the application
 
-   Open the liveserver to display the website using HTML
+Live link of the web page
 
-   # To visit the app directly1
-
-   Click here http://127.0.0.1:5500/index.html?
+.A link to the page
+   
+      https://mitchelleokemwa.github.io/My-FishWatch-Project/
+                  
 
    # Author
    
-   The project was contributed by Mitchelle Okemwa](https://github.com/mitchelleokemwa/My-FishWatch-Project)
+   The project was contributed by: 
+   
+   . Mitchelle Okemwa
 
    # Licence
 
