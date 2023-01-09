@@ -9,7 +9,34 @@
      <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-info">
+
+  <div class="container-fluid">
+    <div class="row jumbtron vh-100" id="jumbo">
+      <div class="mt-5 d-flex justify-content-center">
+        <form>
+          <div>
+            <h1 class="text-light text-itallic fw-2">Welcome to FishWatch</h1>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-light"></label>
+            <input type="text" class="form-control" placeholder="Enter Email" id="email" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="psw" class="form-label text-light"></label>
+            <input type="password" class="form-control" placeholder="Enter Password" id="psw">
+          </div>
+          <div class="mb-3">
+            <label for="psw-confirm" class="form-label text-light"></label>
+            <input type="password" class="form-control" placeholder="Confirm password" id="psw-confirm">
+          </div>
+          <button type="log in" class="btn btn-secondary" id="login-btn"> Log In </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+    <nav class="navbar navbar-expand-lg bg-info" hidden id="nav-fish">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">FishWatch</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,44 +57,8 @@
           </div>
         </div>
       </nav>
-    <div class="container-fluid">
-      <div class="row jumbtron vh-100" id="jumbo">
-        <div class=" mt-5 d-flex justify-content-center">
-          <form>
-            <div>
-              <h1 class="text-light text-itallic fw-2">Welcome to FishWatch</h1>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label text-light"></label>
-              <input type="text" class="form-control" placeholder="Enter Email" id="email" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="psw" class="form-label text-light"></label>
-              <input type="password" class="form-control" placeholder="Enter Password" id="psw">
-            </div>
-            <div class="mb-3">
-              <label for="psw-confirm" class="form-label text-light"></label>
-              <input type="password" class="form-control" placeholder="Confirm password" id="psw-confirm">
-            </div>
-            <button type="log in" class="btn btn-secondary"> Log In </button>
-            <div class="mb-3">
-              <label>
-              <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px"> Remember me
-              </label>
-            </div>
-            <div>
-              <button type="log in" class="btn btn-secondary"> Sign In </button>
-          </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label text-light">Forgot your Password?</label>
-            </div>
-            <button type="submit" class="btn btn-primary"> Submit </button>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid mt-3">
+ 
+    <div class="container-fluid mt-3" hidden id="card-fish">
       <div class="row">
         <div id="app" class="row d-flex align-items-stretch  card-columns">
 
